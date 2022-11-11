@@ -13,7 +13,7 @@ class AppBarWidget extends StatelessWidget with PreferredSizeWidget {
         'assets/images/Facebook_Logo_(2019).svg.png',
         height: 20,
       ),
-      elevation: 1,
+      elevation: 0,
       actions: const [
         CircleAvatar(
           radius: 15,
