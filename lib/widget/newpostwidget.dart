@@ -22,33 +22,19 @@ class NewPostWidget extends StatelessWidget {
             SizedBox(
               width: 10,
             ),
-            // Container(
-            //   width: 250,
-            //   height: 35,
-            //   decoration: BoxDecoration(
-            //     borderRadius: BorderRadius.circular(15),
-            //     color: Colors.white,
-            //   ),
-            //   child: Align(
-            //       alignment: AlignmentDirectional.centerStart,
-            //       child: Text(
-            //         ' Whats on your mind?',
-            //         style: TextStyle(),
-            //       )),
-            // ),
-            Container(
-              width: 280,
-              height: 35,
+            Expanded(
               child: TextField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
-                    hintText: 'What\'s on your mind?',
+                   hintText: 'What\'s on your mind?',
                     hintStyle: TextStyle(
                       fontStyle: FontStyle.italic,
-                      fontSize: 20,
+                      fontSize: 16 ,
                       fontWeight: FontWeight.normal,
                       color: Colors.black87,
                     ),
+
+                    contentPadding: EdgeInsets.symmetric(horizontal: 20),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(25),
                       borderSide: BorderSide(color: Colors.black54),
@@ -62,10 +48,11 @@ class NewPostWidget extends StatelessWidget {
             SizedBox(
               width: 5,
             ),
-            Expanded(
-              child: IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.add_a_photo_rounded,color: Colors.green,),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.add_a_photo_rounded,
+                color: Colors.green,
               ),
             ),
           ],
@@ -74,3 +61,45 @@ class NewPostWidget extends StatelessWidget {
     );
   }
 }
+/**TextField(
+    keyboardType: TextInputType.text,
+    decoration: InputDecoration(
+    hintText: 'What\'s on your mind?',
+    hintStyle: TextStyle(
+    fontStyle: FontStyle.italic,
+    fontSize: 20,
+    fontWeight: FontWeight.normal,
+    color: Colors.black87,
+    ),
+    enabledBorder: OutlineInputBorder(
+    borderRadius: BorderRadius.circular(25),
+    borderSide: BorderSide(color: Colors.black54),
+    ),
+    focusedBorder: OutlineInputBorder(
+    borderRadius: BorderRadius.circular(25),
+    borderSide: BorderSide(color: Colors.black54),
+    )),
+    ),
+ */
+/**Container(
+    width: 280,
+    height: 40,
+    decoration: BoxDecoration(
+    // shape: BoxShape.circle,
+    color: Colors.black12,
+    borderRadius: BorderRadius.circular(20),
+    ),
+    child: Padding(
+    padding: const EdgeInsets.only(left: 20),
+    child: Align(
+    alignment: AlignmentDirectional.centerStart,
+    child: Text(
+    'What\'s on your mind?',
+    style: TextStyle(
+    color: Colors.black87,
+    fontSize: 18,
+    ),
+    ),
+    ),
+    ),
+    ),*/

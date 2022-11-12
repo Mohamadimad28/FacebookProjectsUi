@@ -1,4 +1,4 @@
-import 'package:facebookprojects/model/post_modle.dart';
+import 'package:facebookprojects/model/post_model.dart';
 import 'package:flutter/material.dart';
 
 class HeaderPost extends StatelessWidget {
@@ -45,8 +45,8 @@ class HeaderPost extends StatelessWidget {
                 ],
               ),
               Row(
-                children: const [
-                  Text('5h.'),
+                children: [
+                  Text(user.time!),
                   ImageIcon(
                     AssetImage(
                       'assets/images/globe.png',

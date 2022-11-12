@@ -1,7 +1,9 @@
-import 'package:facebookprojects/model/post_modle.dart';
+import 'package:facebookprojects/model/post_model.dart';
 import 'package:facebookprojects/widget/appbarwidget.dart';
+import 'package:facebookprojects/widget/createstory.dart';
 import 'package:facebookprojects/widget/newpostwidget.dart';
 import 'package:facebookprojects/widget/postfacebook.dart';
+import 'package:facebookprojects/widget/storyview.dart';
 import 'package:flutter/material.dart';
 
 import '../data/data_facebook.dart';
@@ -13,7 +15,7 @@ class HomeScreen extends StatelessWidget {
     }).toList();
   }
 
-  const HomeScreen({Key? key}) : super(key: key);
+  HomeScreen();
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +25,9 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: [
           NewPostWidget(),
+          SizedBox(height: 5,),
+          StoryView(),
+          SizedBox(height: 5),
           Column(
             children: convertDataToPost().map((e) {
               return postfacebook(e);

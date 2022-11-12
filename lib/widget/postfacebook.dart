@@ -1,6 +1,8 @@
-import 'package:facebookprojects/model/post_modle.dart';
+import 'package:facebookprojects/model/post_model.dart';
+import 'package:facebookprojects/widget/createstory.dart';
 import 'package:facebookprojects/widget/headerface.dart';
 import 'package:facebookprojects/widget/imagepost.dart';
+import 'package:facebookprojects/widget/interactionwidget.dart';
 import 'package:facebookprojects/widget/textpost.dart';
 import 'package:flutter/material.dart';
 
@@ -25,40 +27,7 @@ class postfacebook extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-              child: Row(
-                children: const [
-                  CircleAvatar(
-                    backgroundImage: AssetImage(
-                      'assets/images/like.png',
-                    ),
-                    radius: 10,
-                  ),
-                  CircleAvatar(
-                    backgroundImage: AssetImage(
-                      'assets/images/heart.png',
-                    ),
-                    radius: 10,
-                  ),
-                  CircleAvatar(
-                    backgroundImage: AssetImage(
-                      'assets/images/smile.png',
-                    ),
-                    radius: 10,
-                  ),
-                  SizedBox(
-                    width: 2,
-                  ),
-                  Text(
-                    '10K',
-                    style: TextStyle(color: Colors.black54),
-                  ),
-                  Spacer(),
-                  Text('20 Comments . 227 shares'),
-                ],
-              ),
-            ),
+            InteractionWidget(postModel.facebookuser!),
             const Divider(
               indent: 5,
               endIndent: 5,
@@ -114,3 +83,19 @@ class postfacebook extends StatelessWidget {
     );
   }
 }
+/**Column(
+    children: [
+    Container(
+    color: Colors.white,
+    child: SingleChildScrollView(
+    child: Row(
+    children: [
+    CreateStory(),
+    SizedBox(
+    width: 5,
+    ),
+    Storys(postModel.story! ),
+    ],
+    ),
+    ),
+    ),*/
