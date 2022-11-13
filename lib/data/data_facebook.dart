@@ -1,3 +1,5 @@
+import 'package:facebookprojects/model/story_model.dart';
+
 List posts = [
   {
     "post_content": 'this is my office, do you like it',
@@ -60,6 +62,7 @@ List posts = [
     },
   }
 ];
+
 // List Story = [
 //   {
 //     "image":
@@ -90,3 +93,14 @@ List posts = [
 //     "name": "Mohammed Ali",
 //   },
 // ];
+class Data {
+  static List<Story> data = [
+    Story('assets/imageperson/person1.jpg', 'assets/imagestory/story1.jpg', 'Mohamad abed', true),
+    Story('assets/imageperson/person2.jpg', 'assets/imagestory/story2.jpeg', 'Mohamad abed', false),
+    Story('assets/imageperson/person3.jpg', 'assets/imagestory/story3.jpg', 'abed', false),
+    Story('assets/imageperson/person4.jpg', 'assets/imagestory/story4.jpg', 'Mohamad abed', false),
+    Story('assets/imageperson/person5.jpg', 'assets/imagestory/story5.jfif', 'Mohamaf', false),
+    Story('assets/imageperson/person6.jpg', 'assets/imagestory/story6.jfif', 'Ahmad abed', false),
+
+  ];
+}

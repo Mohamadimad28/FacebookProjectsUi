@@ -72,6 +72,18 @@ flutter:
     - assets/images/smile.png
     - assets/images/comment.png
     - assets/images/share.png
+    - assets/imageperson/person1.jpg
+    - assets/imageperson/person2.jpg
+    - assets/imageperson/person3.jpg
+    - assets/imageperson/person4.jpg
+    - assets/imageperson/person5.jpg
+    - assets/imageperson/person6.jpg
+    - assets/imagestory/story1.jpg
+    - assets/imagestory/story2.jpeg
+    - assets/imagestory/story3.jpg
+    - assets/imagestory/story4.jpg
+    - assets/imagestory/story5.jfif
+    - assets/imagestory/story6.jfif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

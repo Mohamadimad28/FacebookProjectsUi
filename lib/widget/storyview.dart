@@ -1,3 +1,5 @@
+import 'package:facebookprojects/data/data_facebook.dart';
+import 'package:facebookprojects/widget/createstory.dart';
 import 'package:flutter/material.dart';
 
 class StoryView extends StatelessWidget {
@@ -13,7 +15,9 @@ class StoryView extends StatelessWidget {
           itemCount: 5,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            return Container(
+            return Data.data[index].iscreate!?
+                CreateStory():
+              Container(
               color: Colors.white,
               child: Stack(
                 children: [
@@ -38,7 +42,7 @@ class StoryView extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
                             image: AssetImage(
-                              'assets/images/person1.jpg',
+                              Data.data[index].imagestory!,
                             ),
                             fit: BoxFit.cover),
                       ),
@@ -49,7 +53,7 @@ class StoryView extends StatelessWidget {
                       left: 20,
                       child: CircleAvatar(
                         backgroundImage: AssetImage(
-                          'assets/images/person1.jpg',
+                          Data.data[index].image!,
                         ),
                         radius: 18,
                       )),
@@ -57,7 +61,7 @@ class StoryView extends StatelessWidget {
                       top: 190,
                       left: 30,
                       child: Text(
-                        'story.name',
+                        Data.data[index].name!,
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,

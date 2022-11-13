@@ -18,7 +18,7 @@ class CreateStory extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   width: 120,
-                  height: 200,
+                  height: 210,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.white,
